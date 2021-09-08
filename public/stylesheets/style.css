@@ -1,12 +1,23 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.navbar {
+    margin-bottom: 40px;
 }
 
-a {
-  color: #00b7ff;
+.delBtn {
+    color: red
 }
 
-h1 {
-  color: 15px;
+#myMap {
+    background-color: grey;
+    height: 50vh;
+}
+
+.index img {
+    height: 30vh;
+    width: 70vw;
+    object-fit: cover;
+    margin-top: 2rem;
+}
+
+.index-btns > * {
+    margin-right: 2rem;
 }

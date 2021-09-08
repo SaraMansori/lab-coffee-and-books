@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="top d-flex justify-content-between">
+        <h2>List of places</h2>
+
+        <div class="filter-btns">
+            <a class="btn btn-dark" href="/places/bookstores/" role="button">Bookstores</a>
+            <a class="btn btn-dark" href="/places/coffee-shops" role="button">Cafés</a>
+        </div>
+    </div>
+
+    <hr>
+
+    <ul>
+
+        {{#each places}}
+
+            <li> 
+
+            <b> {{name}} </b> | {{type}}  
+            <small>[ <a href="/places/edit/{{id}}"> Edit place </a> ]</small>
+            <small>[ <a href="/places/delete/{{id}}" class="delBtn"> Delete </a> ] </small>
+            </li>
+
+        {{/each}}
+
+    </ul>
+
+</div>
