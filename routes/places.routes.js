@@ -96,7 +96,8 @@ router.get("/delete/:id", (req, res) => {
   })
 
 router.get("/map", (req, res) => {
-    res.render("places/maps")
+    const APIKey = process.env.API_KEY
+    res.render("places/maps", { APIKey })
 })
 
 module.exports = router;
